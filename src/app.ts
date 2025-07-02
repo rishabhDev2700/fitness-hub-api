@@ -15,7 +15,7 @@ app.use(responseTime());
 app.use(
   morgan(":method :url :status :res[content-length] - :response-time ms")
 );
-app.use(cors({ origin: ['https://fitness.therishabhdev.com','http://localhost:4200'] }));
+app.use(cors({ origin: ['https://fitness.therishabhdev.com','http://localhost:4200', 'https://fitness.fuzzydevs.com'] }));
 app.use(json());
 
 connectDatabase();
